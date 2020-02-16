@@ -37,3 +37,10 @@
 // Most tactile encoders have detents every 4 stages
 #define ENCODER_RESOLUTION 4
 
+// I've been running into issues with using the LT macro for making the RAISE
+// button multi-purpose as a space button too. When typeing the '-' character
+// (RAISE+J) quickly followed by the character 'd', it was triggering a window
+// change of WIN+F3 (actually a RAISE+F3) and chaning my virtual desktop.
+//#define IGNORE_MOD_TAP_INTERRUPT
+#define PERMISSIVE_HOLD
+
